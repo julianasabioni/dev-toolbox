@@ -7,7 +7,7 @@ export KRB5_CONFIG=/caminho/projeto/krb5
 read -s -p "Digite a senha Kerberos: " PASSWORD
 echo
 
-echo "$PASSWORD" | kinit c1353367@BB.COM.BR
+echo "$PASSWORD" | kinit usuario@DOMINIO.COM.BR
 
 if [ $? -eq 0 ]; then 
 	echo "Autenticação realizada com sucesso."
